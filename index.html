@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>💘 San Valentino</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#ff5f9e,#ff2e63);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:#333;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+max-width:350px;
+}
+
+button{
+margin:10px;
+padding:12px 20px;
+border:none;
+border-radius:15px;
+font-size:16px;
+cursor:pointer;
+}
+
+.si{background:#ff2e63;color:white;}
+.no{background:#ffd6e5;}
+</style>
+</head>
+
+<body>
+
+<div class="card" id="page1">
+<h1>💖 Vuoi essere la mia Valentina?</h1>
+
+<button class="si" onclick="yes()">Sì 💘</button>
+<button class="no" onclick="no()">No 🙈</button>
+</div>
+
+<div class="card" id="page2" style="display:none;">
+<h1>Grazie 💕</h1>
+<p>Ti voglio tanto bene ❤️</p>
+
+<p style="font-size:24px;">💖💘💝💗💞💓💟❤️💖💘</p>
+</div>
+
+<script>
+function yes(){
+document.getElementById("page1").style.display="none";
+document.getElementById("page2").style.display="block";
+}
+
+function no(){
+alert("Ripensaci 😘");
+}
+</script>
+
+</body>
+</html>
